@@ -17,7 +17,7 @@ def start():
 def generate(prefix):
     sess = start()
     text = gpt2.generate(sess,
-                         length=20,
+                         length=40,
                          top_k=10,
                          prefix=prefix,
                          include_prefix=True,

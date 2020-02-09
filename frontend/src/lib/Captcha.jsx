@@ -68,7 +68,12 @@ function Capcha({ serverURL, onSuccess, onFail }) {
   }
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className={capchaStyle.container}>
+      <div className={capchaStyle.joke}>We just need to make sure you're not a robot.</div>
+      <div className={capchaStyle.jokesubhead}>
+        Loading...
+      </div>
+    </div>
   }
 
   if (error) {
