@@ -1,0 +1,8 @@
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(97, 210, 255);
+  width: 100vw;
+  height: 100vh;
+}

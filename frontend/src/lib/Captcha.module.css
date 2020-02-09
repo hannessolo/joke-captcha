@@ -1,0 +1,38 @@
+.container {
+  width: 50%;
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.joke {
+  font-size: 17pt;
+}
+
+.jokesubhead {
+  font-size: 14pt;
+  color: rgb(158, 158, 158);
+  font-weight: light;
+  margin-bottom: 20px;
+
+}
+
+.selector {
+  display: flex;
+}
+
+.option {
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15pt;
+  width: 50%;
+  text-align: center;
+  margin: 2px;
+  cursor: pointer;
+  color: white;
+  margin: 0 20px;
+}
+
+.option:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}

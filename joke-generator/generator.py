@@ -1,5 +1,6 @@
 import gpt_2_simple as gpt2
 import os
+import tensorflow as tf
 import requests
 
 
@@ -13,13 +14,15 @@ def start():
     gpt2.load_gpt2(sess, model_name=model_name)
     return sess
 
-
 def generate(prefix):
     sess = start()
-    return gpt2.generate(sess,
+    text = gpt2.generate(sess,
                          length=20,
                          top_k=10,
                          prefix=prefix,
                          include_prefix=True,
                          return_as_list=True
                          )[0]
+    tf.reset_default_graph()
+    sess.close()
+    return text
