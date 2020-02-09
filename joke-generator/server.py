@@ -11,8 +11,3 @@ def generate_route():
     prompt = request.args.get('prompt')
     print(f"prompt: {prompt}")
     return generate(prompt)
-
-@app.route("/")
-def greet():
-    print("hello")
-    return "Hello"
